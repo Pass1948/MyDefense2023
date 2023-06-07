@@ -37,16 +37,16 @@ public class CameraController : MonoBehaviour
     private void OnPointer(InputValue value) 
     {
         Vector3 mousPos = value.Get<Vector2>();
-        if (mousPos.x <= padding)
+        if (mousPos.x <= 0+padding) // 왼쪽
             moveDir.x = -1;
-        else if (mousPos.x >= Screen.width - padding)
+        else if (mousPos.x >= Screen.width - padding)   // 오른쪽
             moveDir.x = 1;
         else
             moveDir.x = 0;
 
-        if (mousPos.y <= padding)
+        if (mousPos.y <= 0+padding) //위
             moveDir.y = -1;
-        else if (mousPos.y >= Screen.height - padding)
+        else if (mousPos.y >= Screen.height - padding)  // 아래
             moveDir.y = 1;
         else
             moveDir.y = 0;
