@@ -11,11 +11,11 @@ public class SettingSceneUI : SceneUI
         buttons["InfoButton"].onClick.AddListener(() => { Debug.Log("Á¤º¸Ã¢!"); });
         buttons["VolumeButton"].onClick.AddListener(() => { Debug.Log("º¼·ý!"); });
         buttons["SettingButton"].onClick.AddListener(() => { OpenPausePopUp(); });
-
     }
 
     public void OpenPausePopUp() 
     {
-        GameManager.UI.ShowPopUpUI("UI/SettingPopUpUI");
+        GameManager.UI.ShowPopUpUI<PopUpUI>("UI/SettingPopUpUI");
     }
+
 }
