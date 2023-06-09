@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8932241177168288284}
   - component: {fileID: 2380680255510914421}
+  - component: {fileID: 5513552923327171301}
   m_Layer: 6
   m_Name: Slider
   m_TagString: Untagged
@@ -90,6 +91,19 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &5513552923327171301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2968054513560869635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b873bc2f375d4ce4082f709da767bcc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 8065755528916354278}
 --- !u!1 &4085007832645723307
 GameObject:
   m_ObjectHideFlags: 0
@@ -587,6 +601,7 @@ GameObject:
   - component: {fileID: 419191202448872226}
   - component: {fileID: -8313476562558927770}
   - component: {fileID: 1647806379551166963}
+  - component: {fileID: 8065755528916354278}
   - component: {fileID: 6759686396389206434}
   - component: {fileID: 1577975525033950819}
   m_Layer: 6
@@ -647,6 +662,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09f3c6aacfb95d458eb65b0fcb5dfe1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8065755528916354278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6718405271598499387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b15ac20e93c90cb42917705ae30dba67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 5
+  OnChangedHP:
+    m_PersistentCalls:
+      m_Calls: []
+  OnDied:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!135 &6759686396389206434
 SphereCollider:
   m_ObjectHideFlags: 0

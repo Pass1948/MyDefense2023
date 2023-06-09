@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: CanonTowerData
   m_EditorClassIdentifier: 
   towers:
-  - tower: {fileID: 5908753457979397145, guid: 9d96bf2188b8d4d4fa0ce946a08d8d6a, type: 3}
-    damage: 5
+  - tower: {fileID: 5554585869158451758, guid: 9d96bf2188b8d4d4fa0ce946a08d8d6a, type: 3}
+    damage: 3
     range: 15
-    dellay: 3
+    dellay: 2
     buildTime: 2
     buildCost: 4
     sellCost: 3
