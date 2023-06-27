@@ -19,7 +19,6 @@ public class InGameUI : BaseUI
         }
     }
 
-
     public void SetTarget(Transform traget)
     {
         this.followTarget = traget;
