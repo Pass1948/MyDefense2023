@@ -8,6 +8,7 @@ public class WindowUI : BaseUI, IDragHandler, IPointerDownHandler
     protected override void Awake()
     {
         base.Awake();
+        buttons["CloseButton"].Select();
         buttons["CloseButton"].onClick.AddListener(() => { GameManager.UI.CloseWindowUI(this); });
     }
 
